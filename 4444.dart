@@ -8,7 +8,7 @@ void main() {
 
   // +
   int a = 5;
-  double b = 5.126;
+  double b = 5.127;
   var c = a + b;
   print("${a} + ${b} = $c");
   
