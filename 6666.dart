@@ -8,6 +8,7 @@ void main() {
   showList(123456);   // Первая и последняя цифра; ХЗ
   print('\n');
 
+
   print('Задания 3');
   showin(5, 10);  // Узнать гипатинузу;
   print('\n');
@@ -76,10 +77,6 @@ summa(String summa1) {
   print('no');
   }
 }
-
-
-
-
 
 // Задания 7
 similar_int(String similar_int23) {

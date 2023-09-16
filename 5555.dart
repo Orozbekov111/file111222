@@ -6,7 +6,9 @@ void main() {
       print('yes');
       break;
     default: 
-    
+
+
+
       print('no');
       break;
   }
@@ -20,6 +22,7 @@ void main() {
   }else {
     print('wrong text');
   }
+  
 
   switch(lang) {
     case 'en':
@@ -81,9 +84,7 @@ void main() {
 
   print('Циклы while и for');
   print('Задача 1');
-  for (var i = 0; i < 101; i++){
-    print(i);
-  }
+  
   int i1 = 0;
   while (i1 < 100){
     print(i1);
