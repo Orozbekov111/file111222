@@ -7,8 +7,6 @@ void main() {
   print('Задача 1');   // Создайте и заполните массив. Выведите первый и последний элемент списка.
   showList  ([1, 2, 3, 4, 5]);
   
-
-
   print('Задача 2');   // Дано трехзначное число. Найдите произведение их цифр.
   int sum = 222;
   String sum1 = sum.toString();
@@ -17,8 +15,6 @@ void main() {
   int b3 = int.parse(sum1[2]);
   int b4 = b1 * b2 * b3;
   print(b4);
-
-
 
   print('Задача 3'); // Дано трехзначное число. Замените среднюю цифру на ноль.
 
@@ -31,8 +27,6 @@ void main() {
   String t4 = t1 .toString()+ t2.toString()+ t3.toString(); 
   int t5 = int.parse(t4);
   print(t5);
-
-
 
   print('Задача 4');   //Дан номер дня недели. Выведите название дня недели. Решение через if и switch case.
     var plan = 4;
@@ -192,6 +186,20 @@ void main() {
   }
   
   print('Задача 13');   // 
+
+  while(true){
+    var abc = 0;
+    var abc1 = stdin.readLineSync();
+    
+    if(abc == abc1){
+      print('правильно');
+    }else if(abc != abc1){ø
+      print('не правильно');
+    }else {
+      print('вы не ввели число');
+    }
+    abc++;
+  }
 
 }
 
