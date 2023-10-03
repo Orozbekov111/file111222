@@ -73,20 +73,7 @@ randomSearch() {
   bool isAnswer = false;
     int attempt2 = 1;
 
-    if (uroven == 1) {
-      print('Ваше число $answer было угадано за $counter попыток');
-      isAnswer = true;
-    }else if(uroven < 2) {
-      print('Вы превысили количество попыток. Игра окончена!');
-      isAnswer = true;
-    }
-    if (uroven == 3) {
-      print('Ваше число $answer было угадано за $counter попыток');
-      isAnswer = true;
-    }else if(uroven < 4) {
-      print('Вы превысили количество попыток. Игра окончена!');
-      isAnswer = true;
-    }
+    
     if (uroven == 5) {
       print('Ваше число $answer было угадано за $counter попыток');
       isAnswer = true;

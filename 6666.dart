@@ -1,11 +1,11 @@
 
-// void main() {
-//   print('Задания 1');
-//   showUser('Erbol', 20);   //Первый параметр имя пользователя, а второй его возраст;
-//   print('\n');
+void main() {
+  print('Задания 1');
+  showUser('Erbol', 20);   //Первый параметр имя пользователя, а второй его возраст;
+  print('\n');
   
 
-//   print('Задания 2');
+//      print('Задания 2');
 //   showList(123456);   // Первая и последняя цифра; ХЗ
 //   print('\n');
 
@@ -103,71 +103,3 @@
 //     print('no');
 //   }
 // }
-
-import 'dart:io';
-import 'dart:math';
-
-void main() {
-  chisloStepen();
-}
-
-
-
-addFunction(){
-    int a = Random().nextInt(100);
-    int b = Random().nextInt(100);
-    int d = a + b;
-    print('$a + $b = Введите ваш ответ');
-    int c = int.parse(stdin.readLineSync() ?? '55');
-
-    if(c == d){
-      print('Правильно $d');
-    }else {
-      addFunction();
-    }
-  } 
-
-
-gameCost() {
-  int a = Random().nextInt(6);
-  print(a);
-  print('1- бросить еще раз, 2 - закончить.');
-  int b = int.parse(stdin.readLineSync() ?? '');
-
-  if(b == 1) {
-    gameCost();
-  }else {
-    print('«wasted»');
-  }
-}
-
-
-// Создать функцию, которая возводит введенное вами число в введенную вами степенью,
-chisloStepen() {
-  print('Введите число');
-  int a = int.parse(stdin.readLineSync()!);
-  // int a = int.parse(stdin.readLineSync()!);
-  print('Введите степень этого чиса');
-  int b = int.parse(stdin.readLineSync()!);
- 
-  if (b == 0) {
-    return 1;
-  } else {
-    return a * chisloStepen(a, b - 1);
-  }
-}
-
-
-
-
-// Дано натуральное число N. Вычислите сумму его цифр.
-summ() {
-  int n = int.parse(stdin.readLineSync() ?? '');
-  if(n == 1) {
-    return n;
-  }else {
-    n + (summ() - 1);
-    print(n);
-  }
-}
-
