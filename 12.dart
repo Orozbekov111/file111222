@@ -69,8 +69,8 @@ void main() {
   print(car1.returnCar());
   print(car2.returnCar());
 
-  var phone1 = Phone('123', 'iPhone 12', 0.2);
-  var phone2 = Phone('321', 'Samsung Galaxy S21', 0.18);
+  var phone1 = Phone('123', 'iPhone', 123);
+  var phone2 = Phone('321', 'Samsung', 321);
 
   print('Телефон 1: Номер - ${phone1.number}, Модель - ${phone1.model}, Вес - ${phone1.weight} кг');
   print('Телефон 2: Номер - ${phone2.number}, Модель - ${phone2.model}, Вес - ${phone2.weight} кг');
