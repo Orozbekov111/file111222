@@ -1,3 +1,4 @@
+
 // 1) Country - класс имеет поле название, климат и метод описание
 // 1 вариант (метод должен принтануть значения)
 // 2 вариант (метод должен не принтовать, а возвращать "return" название,
@@ -58,7 +59,7 @@ class Phone {
 
 void main() {
   var c1 = Country('Islam', 18);
-  var c2 = Country('Erhan', 20);
+  var c2 = Country('Erhan', 20);           
   
   c1.printValues();
   print(c2.returnValues()); 
