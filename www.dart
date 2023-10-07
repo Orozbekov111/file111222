@@ -98,7 +98,7 @@ void main() {
   // int age3 = int.parse(stdin.readLineSync() ?? " ");
 
   print('Ваш адрес:');
-  String address = stdin.readLineSync() ?? "";
+  String address = stdin.readLineSyncç;
   String addressFinish = address.trim();
    
   print('Вашe хобби:');
@@ -206,3 +206,56 @@ void main() {
 showList(List numbers) {
   print('${numbers.first} ${numbers.last}');
 }
+
+
+
+
+
+
+
+// class User {
+//   String login;
+//   String password;
+
+//   User(this.login, this.password);
+
+//   static void register(String login, String password, String confirmPassword) {
+//     if (!isValidLogin(login)) {
+//       print('WrongLogin');
+//     } else if (!isValidPassword(password)) {
+//       print('WrongPassword');
+//     } else if (password != confirmPassword) {
+//       print('Passwords do not match');
+//     } else {
+//       // Создаем нового пользователя
+//       User newUser = User(login, password);
+//       print('Пользователь ${newUser.login} успешно зарегистрирован.');
+//     }
+//   }
+
+//   static bool isValidLogin(String login) {
+//     if (login.length >= 20) {
+//       return false;
+//     } 
+//     if (!login.contains('@') || (!login.endsWith('@mail.ru') && !login.endsWith('@gmail.com'))) {
+//       return false;
+//     }
+//     return true;
+//   }
+
+//   static bool isValidPassword(String password) {
+//     if (password.length >= 20) {
+//       return false;
+//     }
+  
+//     return true;
+//   }
+// }
+
+// void main() {
+//   String userLogin = 'example@gmail.com';
+//   String userPassword = 'password_123';
+//   String userConfirmPassword = 'password_123';
+
+//   User.register(userLogin, userPassword, userConfirmPassword);
+// }

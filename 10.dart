@@ -3,11 +3,7 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  // int chislo = 5;
-  // int stepen = 2;
-  // int result = chisloStepen(chislo, stepen);
-  // print('$chislo ^ $stepen = $result');
-  
+  addFunction();
   summ(5);
 }
 

@@ -11,10 +11,37 @@
 // меньше 20 символов. Также password и confirmPassword должны быть равны. Если
 // password не соответствует этим требованиям, необходимо вывести WrongPassword. 
 
-import 'dart:io';
+
+
+class User {
+  String login;
+  String password;
+
+  User(this.login, this.password);
+  
+  static bool register(String login, String password, String confirmPassword) {
+    if (password == confirmPassword) {
+      // Создаем нового пользователя
+      User newUser = User(login, password);
+      print('Пользователь ${newUser.login} успешно зарегистрирован.');
+      return true;
+    } else {
+      print('Пароли не совпадают. Регистрация не удалась.');
+      return false;
+    }
+  }
+}
 
 void main() {
-  print('sdfsdf');
-  String? word = stdin.readLineSync() ?? '';
-  print(word);
+  print('aaa');
+  String userLogin = stdin.readLineSync() ?? "";
+    print('sss');
+  String userPassword = stdin.readLineSync() ?? "";
+  String userConfirmPassword = stdin.readLineSync() ?? "";
+
+  bool registrationSuccess = User.register(userLogin, userPassword, userConfirmPassword);
+
+  if (registrationSuccess) {
+    // Дополнительные действия после успешной регистрации
+  }
 }

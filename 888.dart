@@ -2,7 +2,7 @@ import 'dart:io';
 import 'dart:math';
 import 'dart:io';
 
-void main() {x) => Random().nextInt(51) + 50));
+void main() {(((x) => Random().nextInt(51) + 50));
   
   // int n = cv.first;
    
